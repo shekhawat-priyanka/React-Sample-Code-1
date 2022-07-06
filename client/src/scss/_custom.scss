@@ -1,0 +1,239 @@
+// Here you can add other styles
+.main .container-fluid {
+  padding: 0 15px;
+}
+.userTableList .card-header {
+  display: none;
+}
+.userTableList .card-body {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+// .userTableList .card-body a {
+//     width: 50%;
+// }
+// .userTableList .card-body a button, .userTableList .card-body a + label {
+//     margin-bottom: 16px;
+// }
+.addNewElementClass,
+.userTableList .card-body a + label {
+  margin-bottom: 16px;
+}
+.userTableList .react-bootstrap-table-pagination,
+.userTableList a.page-link {
+  width: 100%;
+  align-items: center;
+}
+.userTableList ul.pagination {
+  margin: 0;
+}
+.userTableList span.react-bootstrap-table-pagination-total {
+  padding: 16px;
+}
+.userTableList button {
+  margin: 0 5px;
+}
+// .userTableList .card-body header {
+//   width: 50%;
+//   padding: 0;
+//   justify-content: flex-end !important;
+// }
+// .userTableList header div {
+//   width: 100%;
+// }
+// .userTableList .sc-kgoBCf.hFJClG {
+//   display: flex;
+//   justify-content: flex-start;
+// }
+// .userTableList .sc-bxivhb.jIaJrt.rdt_TableHeadRow {
+//   background: #e5f8ff;
+// }
+// .userTableList .sc-ifAKCX.sc-EHOje.sc-VigVT.ftSrFl {}
+// .userTableList .rdt_TableHeadRow .rdt_TableCol div {
+//   font-size: 14px;
+//   font-weight: 600;
+//   color: #2f353a;
+// }
+// .userTableList .sc-jKJlTe.jDHQPG {
+//   border:1px solid #cfcfcf;
+// }
+// .userTableList button.btn.btn-danger.btn-sm {
+//   margin: 5px;
+// }
+// .userTableList .rdt_TableRow:nth-child(even) {
+//   background: rgba(0, 0, 0, 0.05);
+// }
+// .userTableList .rdt_TableFooter {
+//     background: #e5f8ff;
+// }
+// .userTableList .rdt_TableFooter {
+//     font-weight: 600;
+// }
+// .userTableList .rdt_TableFooter * {
+//     font-weight: 600;
+//     color: #2f353a;
+// }
+
+.updateStatus {
+  cursor: pointer;
+}
+
+.invalid-feedback-text {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 80%;
+  color: #dc3545 !important;
+}
+.preview-img {
+  height: 70px !important;
+}
+.inputWithBtn {
+  width: 92%;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.mr-05 {
+  margin-right: 0.5rem;
+}
+.mb0 {
+  margin-bottom: 0rem;
+}
+
+//########### Css for dropzone Start #####################//
+.dropzone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2px;
+  border-radius: 2px;
+  border-color: #eeeeee;
+  border-style: dashed;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  outline: none;
+  transition: border 0.24s ease-in-out;
+}
+.dropzone:focus {
+  border-color: #2196f3;
+}
+.thumbsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.thumb {
+  display: inline-flex;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  width: 100;
+  height: 100;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.thumbInner {
+  display: flex;
+  // overflow: hidden;
+}
+.thumbInner > img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+.thumb.primary {
+  border: 2px solid green;
+}
+//########### Css for dropzone End #####################//
+
+//########### Css for Nav Tab Start #####################//
+.nav-tabs .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.nav-tabs .nav-link.active {
+  color: #2f353a;
+  background: #fff;
+  border-color: #c8ced3;
+  border-bottom-color: #fff;
+}
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.nav-tabs .nav-link.disabled {
+  color: #73818f;
+  pointer-events: none;
+  cursor: default;
+}
+.nav-tabs .nav-link.disabled {
+  color: #73818f;
+  background-color: transparent;
+  border-color: transparent;
+}
+// tag item
+.tag-item {
+  display: inline-block;
+}
+.tag-cStyle {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  border: 1px solid lightblue;
+  overflow: auto;
+}
+.tag-iStyle {
+  display: inline-block;
+  font-size: 0.9em;
+  margin: 5px;
+  width: 90%;
+  border: 0;
+}
+.tag-tagStyle {
+  display: inline-block;
+  background-color: yellow;
+  font-size: 0.9em;
+  margin: 5px;
+  border: 1px solid lightblue;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.sidebar .nav-link{color:#fff !important;}
+//########### Css for Nav Tab End #####################//
+
+// css for top of listing
+
+.add-button-div {
+  width: 100%;
+}
+//########### Css for Multi select dropdown  Start #############//
+.groupStyles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.groupBadgeStyles {
+  background-color: #ebecf0;
+  border-radius: 2em;
+  color: #172b4d;
+  display: inline-block;
+  padding: 0.16666666666667em 0.5em;
+}
+.dropdownContainer {
+  width: 40%;
+}
+.dropdownSelect {
+  display: inline-block;
+  width: 80%;
+}
+.filter-search-btn {
+  display: inline-block;
+}

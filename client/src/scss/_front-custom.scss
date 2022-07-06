@@ -1,0 +1,596 @@
+/* Global Styles */
+:root {
+  --primary-color: #17a2b8;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+.home a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.home ul {
+  list-style: none;
+}
+
+.home img {
+  width: 100%;
+}
+
+/* Utilities */
+.home .container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+/* Text Styles*/
+.home .x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home .large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.home .lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home .text-center {
+  text-align: center;
+}
+
+.home .text-primary {
+  color: var(--primary-color);
+}
+
+.home .text-dark {
+  color: var(--dark-color);
+}
+
+/* Padding */
+.home .p {
+  padding: 0.5rem;
+}
+.home .p-1 {
+  padding: 1rem;
+}
+.home .p-2 {
+  padding: 2rem;
+}
+.home .p-3 {
+  padding: 3rem;
+}
+.home .py {
+  padding: 0.5rem 0;
+}
+.home .py-1 {
+  padding: 1rem 0;
+}
+.home .py-2 {
+  padding: 2rem 0;
+}
+.home .py-3 {
+  padding: 3rem 0;
+}
+
+/* Margin */
+.home .m {
+  margin: 0.5rem;
+}
+.home .m-1 {
+  margin: 1rem;
+}
+.home .m-2 {
+  margin: 2rem;
+}
+.home .m-3 {
+  margin: 3rem;
+}
+.home .my {
+  margin: 0.5rem 0;
+}
+.home .my-1 {
+  margin: 1rem 0;
+}
+.home .my-2 {
+  margin: 2rem 0;
+}
+.home .my-3 {
+  margin: 3rem 0;
+}
+
+.home .btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+}
+
+.home .badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: var(--light-color);
+  color: #333;
+}
+
+.home .alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+.home .btn-primary,
+.home .bg-primary,
+.home .badge-primary,
+.home .alert-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.home .btn-light,
+.home .bg-light,
+.home .badge-light,
+.home .alert-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.home .btn-dark,
+.home .bg-dark,
+.home .badge-dark,
+.home .alert-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.home .btn-danger,
+.home .bg-danger,
+.home .badge-danger,
+.home .alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+}
+
+.home .btn-success,
+.home .bg-success,
+.home .badge-success,
+.home .alert-success {
+  background: var(--success-color);
+  color: #fff;
+}
+
+.home .btn-white,
+.home .bg-white,
+.home .badge-white,
+.home .alert-white {
+  background: #fff;
+  color: #333;
+  border: #ccc solid 1px;
+}
+
+.home .btn:hover {
+  opacity: 0.8;
+}
+
+.home .bg-light,
+.home .badge-light {
+  border: #ccc solid 1px;
+}
+
+.home .round-img {
+  border-radius: 50%;
+}
+
+.home .line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+/* Overlay */
+.home .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Forms */
+.home .form .form-group {
+  margin: 1.2rem 0;
+}
+
+.home .form .form-text {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+}
+
+.home .form input[type="text"],
+.home .form input[type="email"],
+.home .form input[type="password"],
+.home .form input[type="date"],
+.home .form select,
+.home .form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+
+.home .form input[type="submit"],
+.home button {
+  font: inherit;
+}
+
+.home .form .social-input {
+  display: flex;
+}
+
+.home .form .social-input i {
+  padding: 0.5rem;
+  width: 4rem;
+}
+
+.home .form .social-input i.fa-twitter {
+  color: #38a1f3;
+}
+.home .form .social-input i.fa-facebook {
+  color: #3b5998;
+}
+.home .form .social-input i.fa-instagram {
+  color: #3f729b;
+}
+.home .form .social-input i.fa-youtube {
+  color: #c4302b;
+}
+.home .form .social-input i.fa-linkedin {
+  color: #0077b5;
+}
+
+.home .table th,
+.home .table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.home .table th {
+  background: var(--light-color);
+}
+
+/* Navbar */
+.home .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px var(--primary-color);
+  opacity: 0.9;
+}
+
+.home .navbar ul {
+  display: flex;
+}
+
+.home .navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+
+.home .navbar a:hover {
+  color: var(--primary-color);
+}
+
+.home .navbar .welcome span {
+  margin-right: 0.6rem;
+}
+
+/* Landing Page */
+.home .landing {
+  position: relative;
+  background: url("../assets/img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.home .landing-inner {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Profiles Page */
+.home .profile {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  align-items: center;
+  grid-gap: 2rem;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* Profile Page */
+.home .profile-grid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
+  grid-gap: 1rem;
+}
+
+.home .profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .profile-top img {
+  width: 250px;
+}
+
+.home .profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.home .profile-top .icons a:hover {
+  color: var(--dark-color);
+}
+
+.home .profile-about {
+  grid-area: about;
+  text-align: center;
+}
+
+.home .profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .profile-exp {
+  grid-area: exp;
+}
+
+.home .profile-edu {
+  grid-area: edu;
+}
+
+.home .profile-exp h2,
+.home .profile-edu h2 {
+  margin-bottom: 1rem;
+}
+
+.home .profile-exp > div,
+.home .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.home .profile-exp > div:last-child,
+.home .profile-edu > div:last-child {
+  border: 0;
+}
+
+.home .profile-exp p,
+.home .profile-edu p {
+  margin: 0.5rem 0;
+}
+
+.home .profile-github {
+  grid-area: github;
+}
+
+.home .profile-github .repo {
+  display: flex;
+}
+
+.home .profile-github .repo > div:first-child {
+  flex: 7;
+  flex-basis: 70%;
+}
+
+.home .profile-github > div:last-child {
+  flex: 3;
+  flex-basis: 20%;
+}
+
+/* Posts Page */
+.home .post-form .post-form-header {
+  background: var(--primary-color);
+  padding: 0.5rem;
+}
+
+.home .post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.home .post > div:first-child {
+  text-align: center;
+}
+
+.home .post img {
+  width: 100px;
+}
+
+.home .post .comment-count {
+  background: var(--light-color);
+  color: var(--primary-color);
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.home .post .post-date {
+  color: #aaa;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  .home .container {
+    margin-top: 8rem;
+  }
+
+  .home .hide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .home .x-large {
+    font-size: 3rem;
+  }
+
+  .home .large {
+    font-size: 2rem;
+  }
+
+  .home .lead {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .home .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .home .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .home .navbar h1 {
+    margin-bottom: 1rem;
+  }
+
+  .home .navbar .welcome {
+    display: none;
+  }
+
+  /* Profiles Page */
+  .home .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home .profile ul {
+    display: none;
+  }
+
+  /* Profile Page */
+
+  .home .profile-top img,
+  .home .profile img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .home .profile-grid {
+    grid-template-areas:
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
+  }
+
+  .home .profile-about .skills {
+    flex-direction: column;
+  }
+
+  .home .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+
+  .home .post {
+    grid-template-columns: 1fr;
+  }
+  .home .post a,
+  .home .post button {
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+//product page css (to be changed)
+.landing-inner.productListCard.card {
+  background-color: lightgray !important;
+  width: auto !important;
+}
+
+.productListCard .card-header {
+  background-color: inherit;
+  border: none;
+  color: black !important;
+}
+.home .preview-img {
+  height: 100px !important;
+  width: 150px !important;
+}
+.productItems .card-header {
+  text-align: left;
+}

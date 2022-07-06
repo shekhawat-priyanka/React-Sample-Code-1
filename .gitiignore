@@ -1,0 +1,11 @@
+node_modules/
+server/node_modules
+client/node_modules
+server/public
+server/.env
+client/.env
+server/config/default.json
+.history
+.vscode
+server/package-lock.json
+client/package-lock.json
